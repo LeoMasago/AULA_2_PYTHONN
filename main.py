@@ -174,8 +174,21 @@ else:
 
 '''
 # Exercício 5
-
-
+v1 = input("Digite um valor: ")
+v2 = input("Digite outro valor: ")
+v3 = input("Digite mais um valor: ")
+if v1 == v2 or v1 == v3 or v3 ==v2:
+    print("não foi possível efetuar a operação")
+elif v1 < v2 and v1 < v3 and v2 < v3:
+    print(f"{v1}, {v2}, {v3}")
+elif v2 < v1 and v2 < v3 and v1 < v3:
+    print(f"{v2}, {v1}, {v3}")
+elif v3 < v1 and v3 < v2 and v1 < v2:
+    print(f"{v3}, {v1}, {v2}")
+elif v1 > v2 and v1 > v3 and v2 > v3:
+    print(f"{v3}, {v2}, {v1}")
+elif v1 > v2 and v1 > v3 and v2 < v3:
+    print(f"{v2}, {v3}, {v1}")
 '''
 # Exercício 6
 
