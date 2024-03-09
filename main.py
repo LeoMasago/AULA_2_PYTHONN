@@ -172,9 +172,11 @@ else:
     print(f"{resultado}")
 
 
-
+'''
 # Exercício 5
 
+
+'''
 # Exercício 6
 
 altura = float(input("Digite sua altura: "))
@@ -203,7 +205,20 @@ elif lados == 5:
     print(f"A área desse Pentágono é de {area} cm")
 
 
+
 # Exercício 9
+v1 = int(input("Digite um valor: "))
+v2 = int(input("Digite outro valor: "))
+v3 = int(input("Digite mais um valor: "))
+if v1 == v2 or v1 == v3 or v3 ==v2:
+    print("não foi possível efetuar a operação")
+elif v1 > v2 and v1 > v3:
+    print(f"{v1}")
+elif v2 > v1 and v2 > v3:
+    print(f"{v2}")
+elif v3 > v1 and v3 > v2:
+    print(f"{v3}")
+
 
 # Exercício 10
 
