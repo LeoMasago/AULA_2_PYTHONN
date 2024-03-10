@@ -50,16 +50,16 @@ c = 4
 d = 5
 
 print(f"A comparação {a} > {b} or {c} > {d}, ou seja, {a>b} or {c>d} dá {a>b or c>d}")
-print(f"A comparação {a} < {b} or {c} > {d}, ou seja, {a<b} or {c>d} dá {a>b or c>d}")
+print(f"A comparação {a} < {b} or {c} > {d}, ou seja, {a<b} or {c>d} dá {a<b or c>d}")
 print(f"A comparação {a} < {b} or {c} < {d}, ou seja, {a<b} or {c<d} dá {a<b or c>d}")
 print(f"A comparação {a} > {b} or {c} < {d}, ou seja, {a>b} or {c<d} dá {a>b or c<d}")
 
 print()
 
 print(f"A comparação {a} > {b} and {c} > {d}, ou seja, {a>b} and {c>d} dá {a>b and c>d}")
-print(f"A comparação {a} < {b} and {c} > {d}, ou seja, {a<b} and {c>d} dá {a>b and c>d}")
-print(f"A comparação {a} < {b} and {c} < {d}, ou seja, {a<b} and {c<d} dá {a>b and c<d}")
-print(f"A comparação {a} > {b} and {c} < {d}, ou seja, {a>b} and {c<d} dá {a<b and c<d}")
+print(f"A comparação {a} < {b} and {c} > {d}, ou seja, {a<b} and {c>d} dá {a<b and c>d}")
+print(f"A comparação {a} < {b} and {c} < {d}, ou seja, {a<b} and {c<d} dá {a<b and c<d}")
+print(f"A comparação {a} > {b} and {c} < {d}, ou seja, {a>b} and {c<d} dá {a>b and c<d}")
 
 idade = int(input("Diga sua idade: "))
 if idade < 18:
@@ -174,21 +174,24 @@ else:
 
 '''
 # Exercício 5
-v1 = input("Digite um valor: ")
-v2 = input("Digite outro valor: ")
-v3 = input("Digite mais um valor: ")
+v1 = int (input("Digite um valor: "))
+v2 = int (input("Digite outro valor: "))
+v3 = int (input("Digite mais um valor: "))
 if v1 == v2 or v1 == v3 or v3 ==v2:
     print("não foi possível efetuar a operação")
 elif v1 < v2 and v1 < v3 and v2 < v3:
     print(f"{v1}, {v2}, {v3}")
-elif v2 < v1 and v2 < v3 and v1 < v3:
-    print(f"{v2}, {v1}, {v3}")
-elif v3 < v1 and v3 < v2 and v1 < v2:
-    print(f"{v3}, {v1}, {v2}")
 elif v1 > v2 and v1 > v3 and v2 > v3:
     print(f"{v3}, {v2}, {v1}")
+elif v2 < v1 and v2 < v3 and v1 < v3:
+    print(f"{v2}, {v1}, {v3}")
+elif v1 > v2 and v1 > v3 and v3 > v2:
+    print(f"{v1}, {v3}, {v2}")
+elif v2 > v3 and v2 > v1 and v1 > v3:
+    print(f"{v3}, {v1}, {v2}")
 elif v1 > v2 and v1 > v3 and v2 < v3:
     print(f"{v2}, {v3}, {v1}")
+
 '''
 # Exercício 6
 
