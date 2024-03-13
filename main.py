@@ -185,13 +185,12 @@ elif v1 > v2 and v1 > v3 and v2 > v3:
     print(f"{v3}, {v2}, {v1}")
 elif v2 < v1 and v2 < v3 and v1 < v3:
     print(f"{v2}, {v1}, {v3}")
-elif v1 > v2 and v1 > v3 and v3 > v2:
-    print(f"{v1}, {v3}, {v2}")
-elif v2 > v3 and v2 > v1 and v1 > v3:
-    print(f"{v3}, {v1}, {v2}")
 elif v1 > v2 and v1 > v3 and v2 < v3:
     print(f"{v2}, {v3}, {v1}")
-
+elif v2 > v3 and v2 > v1 and v1 > v3:
+    print(f"{v3}, {v1}, {v2}")
+elif v2 > v1 and v2 > v3 and v3 > v1:
+    print(f"{v1}, {v3}, {v2}")
 '''
 # Exercício 6
 

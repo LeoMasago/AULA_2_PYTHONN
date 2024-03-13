@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="23505fa8-6b71-4750-b218-6d66a35dcbda" name="Changes" comment="Primeiro commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +38,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/masag/Desktop/AULA_2_PYTHONN-main"
+    "last_opened_file_path": "C:/Users/masag/Desktop/AULA_PYTHON/AULA_2"
   }
 }]]></component>
   <component name="RunManager">
