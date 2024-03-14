@@ -172,7 +172,7 @@ else:
     print(f"{resultado}")
 
 
-'''
+
 # Exercício 5
 v1 = int (input("Digite um valor: "))
 v2 = int (input("Digite outro valor: "))
@@ -189,8 +189,27 @@ elif v1 > v2 and v1 > v3 and v2 < v3:
     print(f"{v2}, {v3}, {v1}")
 elif v2 > v3 and v2 > v1 and v1 > v3:
     print(f"{v3}, {v1}, {v2}")
-elif v2 > v1 and v2 > v3 and v3 > v1:
+else:
     print(f"{v1}, {v3}, {v2}")
+
+'''
+#Exercício 5 meio correto
+v1 = int (input("Digite um valor: "))
+v2 = int (input("Digite outro valor: "))
+v3 = int (input("Digite mais um valor: "))
+x = v1
+y = v2
+z = v3
+if v1 > v2 and v1 > v3:
+    v3 = x
+    v1 = z
+elif v2 > v1 and v2 > v3:
+    v3 = y
+    v2 = z
+if v1 > v2:
+     print(f"{v2}, {v1}, {v3}")
+else:
+    print(f"{v1}, {v2}, {v3}")
 '''
 # Exercício 6
 
