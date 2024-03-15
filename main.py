@@ -141,7 +141,7 @@ if v1 == v2:
     print("Não foi possível efetuar o cálculo.")
 elif v1 > v2:
     print(f"{v1}")
-elif v2 > v1:
+else:
     print(f"{v2}")
 
 
@@ -149,29 +149,28 @@ elif v2 > v1:
 # Exercício 2
 ano = int(input("Digite o ano em que você nasceu: "))
 resultado = 2024 - ano
-if resultado >= 16:
+if resultado >= 18:
+    print("Você é obrigado a votar!!")
+elif idade >= 16:
     print("Você pode votar!!")
 else:
     print("não pode votar!!!")
 
 
 # Exercício 3
-senha = int (input("Digite a senha: "))
-if senha == 1234:
+password = '1234'
+senha = input("Digite a senha: ")
+if senha == password:
     print("Senha correta!!")
 else:
     print("Senha incorreta")
 
 # Exercício 4
 compradas = int(input("Digite a quatidades de maçãs compradas: "))
-if compradas < 12:
-    resultado = 0.30 * compradas
-    print(f"{resultado}")
-else:
-    resultado = 0.25 * compradas
-    print(f"{resultado}")
-
-
+preco = 0.3
+if compradas >= 12:
+    preco = 0.25
+    print(f"Você vai gastar R${preco*compradas}")
 
 # Exercício 5
 v1 = int (input("Digite um valor: "))
@@ -192,7 +191,7 @@ elif v2 > v3 and v2 > v1 and v1 > v3:
 else:
     print(f"{v1}, {v3}, {v2}")
 
-'''
+
 #Exercício 5 meio correto
 v1 = int (input("Digite um valor: "))
 v2 = int (input("Digite outro valor: "))
@@ -210,7 +209,28 @@ if v1 > v2:
      print(f"{v2}, {v1}, {v3}")
 else:
     print(f"{v1}, {v2}, {v3}")
-'''
+
+# Correção do 5
+
+v1 = int (input("Digite um valor: "))
+v2 = int (input("Digite outro valor: "))
+v3 = int (input("Digite mais um valor: "))
+
+if v1 > v2 and v1 > v3:
+    x = v1
+    v1 = v3
+    v3 = x
+elif v2 > v1 and v2 > v3:
+    x = v2
+    v2 = v3
+    v3 = x
+
+if v1 > v2:
+    x = v1
+    v1 = v2
+    v2 = x
+print(f"{v1}, {v2}, {v3}")
+
 # Exercício 6
 
 altura = float(input("Digite sua altura: "))
@@ -221,7 +241,6 @@ if sexo == 'm':
 elif sexo == 'f':
     ideal = (62.1 * altura) - 44.7
     print(f"Com {altura} de altura, você deve pesar {ideal}")
-
 
 # Exercício 7 e 8
 lados = int(input("Digite a quantidade de lados: "))
@@ -253,28 +272,40 @@ elif v2 > v1 and v2 > v3:
 elif v3 > v1 and v3 > v2:
     print(f"{v3}")
 
+# Exercício 9 correto
+
+v1 = int(input("Digite um valor: "))
+v2 = int(input("Digite outro valor: "))
+v3 = int(input("Digite mais um valor: "))
+if v1 > v2 and v1 > v3:
+    print(v1)
+elif v2 > v3:
+    print(v2)
+else:
+    print(v3)
 
 # Exercício 10
 
 lado1 = int(input("Digite a medida de um triângulo: "))
 lado2 = int(input("Digite outra medida: "))
 lado3 = int(input("Digite a última medida: "))
-if lado1 == lado2 == lado3:
-    print("Este triângulo é Equilátero")
+if lado1 == lado3 and lado2 == lado3:
+    forma = "Equilátero"
 elif lado1 == lado2 or lado2 == lado3 or lado1 == lado3:
-    print("Este triângulo é Isóscele")
-elif lado1 != lado2 != lado3:
-    print("Este triângulo é Escaleno")
+    forma = "Isóceles"
+else:
+    forma ='escaleno'
+print(f"Este triângulo é {forma}")
 
 # Exercício 11
 a1 = int(input("Digite um ângulo: "))
 a2 = int(input("Digite outro ângulo: "))
 a3 = int(input("Digite o último ângulo: "))
-soma = a1 + a2 + a3
-if soma == 90:
-    print(f"{soma}º é um Triângulo Retângulo")
-elif soma > 90:
-    print(f"{soma}º é um Triângulo Obtusângulo")
+if a1 == 90 or a2 == 90 or a3 == 90:
+    forma ="Retângulo"
+elif a1 > 90 or a2 > 90 or a3 > 90:
+    forma ='Obtuso'
 else:
-    print(f"{soma}º é um Triângulo Acutângulo")
+    forma = 'Agudo'
+print(f"É um Triângulo {forma}")
 '''
