@@ -309,3 +309,12 @@ else:
     forma = 'Agudo'
 print(f"É um Triângulo {forma}")
 '''
+
+# Utilizando loop
+senha = '1234'
+password = input("Diga sua senha: ")
+tentativa = 1
+while senha != password and tentativa < 3:
+    print("Acesso negado !!!")
+    tentativa = tentativa + 1
+    password = input("Diga sua senha: ")
